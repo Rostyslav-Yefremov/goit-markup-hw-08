@@ -40,7 +40,6 @@
 }
 
 .container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -85,7 +84,7 @@ a {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 h1,
@@ -575,17 +574,24 @@ p {
 }
 
 .hero-overlay {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
-  height: 600px;
   max-width: 1600px;
   text-align: center;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index/Img-overlay.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--hero-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-overlay {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+  }
 }
 
 .hero__title {
