@@ -226,9 +226,17 @@ p {
   flex-wrap: wrap;
   margin-top: -15px;
   margin-left: -8px;
+  margin-bottom: 25px;
 }
 
 @media screen and (min-width: 768px) {
+  .button-portfolio__list {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .button-portfolio__list {
     margin-bottom: 50px;
     justify-content: center;
@@ -263,11 +271,20 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
+  max-width: 450px;
+  width: 100%;
+  max-height: 609px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__button {
@@ -294,7 +311,7 @@ p {
 }
 
 .form {
-  width: 528px;
+  width: 100%;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -382,11 +399,17 @@ p {
   align-items: center;
   justify-content: center;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox__policy {
+    font-size: 14px;
+  }
 }
 
 .checkbox__input:checked + .checkbox__icon {
@@ -413,12 +436,18 @@ p {
 
 .checkbox__link {
   display: inline-block;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--accent-color);
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox__link {
+    font-size: 14px;
+  }
 }
 
 .box-form-button {
@@ -581,6 +610,14 @@ p {
 .header-container {
   display: flex;
   align-items: center;
+}
+
+.menu-button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 
 .hero-overlay {
@@ -863,10 +900,6 @@ p {
   fill: currentColor;
 }
 
-.card-set {
-  display: flex;
-}
-
 @media screen and (min-width: 768px) {
   .card-set__list {
     display: flex;
@@ -878,12 +911,16 @@ p {
 
 .card-set__item {
   margin-top: 30px;
+  border-bottom: 1px solid var(--card-border-color);
+  border-right: 1px solid var(--card-border-color);
+  border-left: 1px solid var(--card-border-color);
 }
 
 @media screen and (min-width: 768px) {
   .card-set__item {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
+    margin-top: 30px;
     width: 354px;
   }
 }
@@ -897,9 +934,6 @@ p {
 
 .card-set__content {
   padding: 20px 24px;
-  border-bottom: 1px solid var(--card-border-color);
-  border-right: 1px solid var(--card-border-color);
-  border-left: 1px solid var(--card-border-color);
 }
 
 .card-set__title {

@@ -1,7 +1,7 @@
 // ФОРМА В МОДАЛЬНОМ ОКНЕ
 
 .form {
-  width: 528px;
+  width: 100%;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -88,11 +88,14 @@
   align-items: center;
   justify-content: center;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
   margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .checkbox__input {
@@ -120,12 +123,15 @@
 
 .checkbox__link {
   display: inline-block;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--accent-color);
   cursor: pointer;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .box-form-button {
