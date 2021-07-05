@@ -1,8 +1,11 @@
 .button-portfolio__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -15px;
+  margin-left: -8px;
   @media screen and (min-width: 768px) {
     margin-bottom: 50px;
     justify-content: center;
-    display: flex;
   }
   // display: flex;
   // margin-bottom: 50px;
@@ -30,6 +33,11 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
-.button-portfolio__item:not(:last-child) {
-  margin-right: 8px;
+// .button-portfolio__item:not(:last-child) {
+//   margin-right: 8px;
+// }
+
+.button-portfolio__item {
+  margin-top: 15px;
+  margin-left: 8px;
 }
