@@ -585,7 +585,16 @@ p {
 }
 
 .footer-social {
-  margin-right: 93px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    margin-right: 93px;
+  }
 }
 
 .social__link--footer-icons {
@@ -999,14 +1008,19 @@ p {
   padding-bottom: 60px;
 }
 
-.footer-container {
+.footer-contacts {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
 }
 
-.footer-contacts {
-  width: 231px;
-  margin-right: 70px;
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    width: 231px;
+    margin-right: 70px;
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer-address {
