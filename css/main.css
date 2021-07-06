@@ -484,6 +484,12 @@ p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    margin-top: 0;
+  }
+}
+
 .footer-subscribe {
   display: flex;
   align-items: center;
@@ -637,6 +643,7 @@ p {
 @media screen and (min-width: 1200px) {
   .footer-social {
     margin-right: 93px;
+    margin-left: 0;
   }
 }
 
@@ -1055,6 +1062,7 @@ p {
   .footer-container {
     display: flex;
     align-items: baseline;
+    text-align: left;
   }
 }
 
