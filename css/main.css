@@ -508,7 +508,7 @@ p {
   .footer-subscribe {
     display: flex;
     align-items: center;
-    justify-content: baseline;
+    flex-direction: row;
   }
 }
 
@@ -535,6 +535,7 @@ p {
     width: 358px;
     padding: 15px 16px;
     margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 
@@ -1063,6 +1064,7 @@ p {
     display: flex;
     align-items: baseline;
     text-align: left;
+    flex-wrap: nowrap;
   }
 }
 

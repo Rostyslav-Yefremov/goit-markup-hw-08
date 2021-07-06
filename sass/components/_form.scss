@@ -188,7 +188,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
-    justify-content: baseline;
+    flex-direction: row;
   }
 }
 
@@ -210,6 +210,7 @@
     width: 358px;
     padding: 15px 16px;
     margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 .subscribe__button {
