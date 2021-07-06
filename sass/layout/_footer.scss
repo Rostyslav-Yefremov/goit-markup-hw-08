@@ -5,32 +5,25 @@
 }
 
 .footer-container {
-  // display: flex;
-  // align-items: baseline;
-
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // @media screen and (min-width: 1200px) {
-  //   display: flex;
-  //   align-items: baseline;
-  // }
-}
-
-.footer-contacts {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   @media screen and (min-width: 1200px) {
-    width: 231px;
-    margin-right: 70px;
     display: flex;
     align-items: baseline;
   }
-
-  // width: 231px;
-  // margin-right: 70px;
+  // display: flex;
+  // align-items: baseline;
 }
+
+// делаю от контейнера
+
+.footer-contacts {
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+    margin-right: 70px;
+  }
+}
+
+// от контактов пошел
+
 .footer-address {
   font-style: normal;
   font-size: 14px;
