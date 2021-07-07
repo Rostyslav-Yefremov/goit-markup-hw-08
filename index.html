@@ -24,15 +24,12 @@
             <nav class="nav">
                 <a href="./index.html" class="logo"> <span
                         class="logo-studio">Web</span>Studio</a>
-                <!-- <button class="menu-button" type="button"> <svg width="40"
+                <button class="menu-open" type="button"><svg width="40"
                         height="40">
-                        <use
-                            href="./images/social.icons/sprite.svg#mobile-menu">
+                        <use href="./images/social.icons/sprite.svg#menu-open">
                         </use>
-                        <use
-                            href="./images/social.icons/sprite.svg#mobile-menu-close">
-                        </use>
-                    </svg> </button> -->
+                    </svg></button>
+
                 <ul class="nav__list list">
                     <li class="nav__item"> <a href="./index.html"
                             class="nav__link nav__link--current touch-transform">Студия</a>
@@ -45,7 +42,7 @@
             </nav>
             <ul class="contact__list list">
                 <li class="contact__item"> <a href="mailto:info@devstudio.com"
-                        class="nav__link touch-transform">
+                        class="contact__link touch-transform">
                         <svg class="nav__icon" width="16" height="12">
                             <use
                                 href="./images/social.icons/sprite.svg#icon-envelope">
@@ -54,8 +51,8 @@
                         info@devstudio.com
                     </a></li>
                 <li class="contact__item"> <a href="tel:+380961111111"
-                        class="nav__link touch-transform" touch-transform> <svg
-                            class="nav__icon" width="10" height="16">
+                        class="contact__link touch-transform" touch-transform>
+                        <svg class="nav__icon" width="10" height="16">
                             <use
                                 href="./images/social.icons/sprite.svg#icon-smartphone">
                             </use>
@@ -63,17 +60,19 @@
                         11 11 </a></li>
             </ul>
 
-            <!-- Мобильно меню -->
-            <button class="menu-open" type="button">O</button>
-            <!-- <button class="menu-open" type="button"> <svg width="40" height="40">
-                        <use href="./images/social.icons/sprite.svg#menu-open">
-                        </use>
-                    </svg> </button> -->
+
+
         </div>
-        <div class="mobile-nav">
+
+        <!-- Мобильно меню -->
+        <div class="mobile-nav is-hidden">
             <div class="container">
 
-                <button class="menu-close" type="button">X</button>
+                <button class="menu-close" type="button"> <svg width="40"
+                        height="40">
+                        <use href="./images/social.icons/sprite.svg#menu-close">
+                        </use>
+                    </svg> </button>
 
                 <nav>
                     <ul class="mobile-menu list">
@@ -602,6 +601,7 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

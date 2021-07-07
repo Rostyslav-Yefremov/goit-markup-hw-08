@@ -1,12 +1,20 @@
+// Хэдер и мобильное меню
+
 .header {
   background-color: var(--white-color);
   border-bottom: 1px solid #ececec;
 }
 
-// .header-container {
-//   // display: flex;
-//   // align-items: center;
-// }
+.header-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
+}
 
 .mobile-nav {
   position: fixed;
@@ -15,26 +23,55 @@
   width: 100vw;
   height: 100vh;
   z-index: 2;
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
 
   .container {
     position: relative;
-    // padding-top: 40px;
-    // padding-bottom: 40px;
     padding: 48px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
   }
+
   .menu-close {
     position: absolute;
-    top: 25px;
-    right: 21px;
+    // top: 25px;
+    // right: 21px;
+    top: 10px;
+    right: 15px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
   }
 }
 
-// .mobile-menu {
-// }
+.menu-open {
+  // position: absolute;
+  top: 25px;
+  right: 21px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px), (min-width: 1200px) {
+    display: none;
+  }
+}
+
+// Закрытие меню
+.mobile-nav.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+// Закрытие меню
 
 .mobile-menu__item {
   margin-bottom: 36px;
@@ -46,6 +83,11 @@
   line-height: 1.175;
   // text-align: center;
   letter-spacing: 0.02em;
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--accent-color);
+  }
 }
 
 .mobile-contacts__link {
@@ -64,7 +106,7 @@
 .mobile-nav__bottom {
 }
 // .menu-button {
-//   display: inline-block;
+//   // display: inline-block;
 //   margin: 0;
 //   padding: 0;
 //   border: none;
