@@ -671,17 +671,17 @@ p {
 }
 
 .mobile-nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   background-color: var(--white-color);
   width: 100vw;
   height: 100vh;
+  z-index: 2;
 }
 
 .mobile-nav .container {
   position: relative;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 48px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
