@@ -428,6 +428,7 @@ p {
 
 .checkbox__icon {
   display: inline-block;
+  vertical-align: middle;
   width: 16px;
   height: 15px;
   border: 2px solid var(--title-color);
@@ -667,6 +668,53 @@ p {
 .header {
   background-color: var(--white-color);
   border-bottom: 1px solid #ececec;
+}
+
+.mobile-nav {
+  position: absolute;
+  top: 0;
+  background-color: var(--white-color);
+  width: 100vw;
+  height: 100vh;
+}
+
+.mobile-nav .container {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.mobile-nav .menu-close {
+  position: absolute;
+  top: 25px;
+  right: 21px;
+}
+
+.mobile-menu__item {
+  margin-bottom: 36px;
+}
+
+.mobile-menu__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+}
+
+.mobile-contacts__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mobile-network {
+  display: flex;
 }
 
 .hero-overlay {
