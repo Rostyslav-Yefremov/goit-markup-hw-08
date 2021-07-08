@@ -25,6 +25,9 @@
   width: 100vw;
   height: 100vh;
   z-index: 2;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
   @media screen and (min-width: 1200px) {
     display: none;
   }
@@ -84,7 +87,11 @@
 }
 // Закрытие меню
 
-.mobile-menu__item:not(:last-child) {
+// .mobile-menu__item:not(:last-child) {
+//   margin-bottom: 36px;
+// }
+
+.mobile-menu__item {
   margin-bottom: 36px;
 }
 
@@ -131,7 +138,7 @@
     line-height: 1.16;
     letter-spacing: 0.02em;
     color: #757575;
-    margin-bottom: 32px;
+    // margin-bottom: 32px;
 
     &:hover,
     &:focus,
