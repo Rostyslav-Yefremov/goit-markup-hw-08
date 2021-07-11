@@ -641,6 +641,7 @@ p {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  overflow-y: auto;
 }
 
 .backdrop.is-hidden {

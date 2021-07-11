@@ -24,8 +24,8 @@
             <nav class="nav">
                 <a href="./index.html" class="logo"> <span
                         class="logo-studio">Web</span>Studio</a>
-                <button class="menu-open" type="button"><svg width="40"
-                        height="40">
+                <button class="menu-open touch-transform" type="button"><svg
+                        width="40" height="40">
                         <use href="./images/social.icons/sprite.svg#menu-open">
                         </use>
                     </svg></button>
@@ -68,8 +68,8 @@
         <div class="mobile-nav is-hidden">
             <div class="container">
 
-                <button class="menu-close" type="button"> <svg width="40"
-                        height="40">
+                <button class="menu-close touch-transform" type="button"> <svg
+                        width="40" height="40">
                         <use href="./images/social.icons/sprite.svg#menu-close">
                         </use>
                     </svg> </button>
@@ -77,15 +77,15 @@
                 <nav>
                     <ul class="mobile-menu list">
                         <li class="mobile-menu__item">
-                            <a class="mobile-menu__link link current"
+                            <a class="mobile-menu__link link current touch-transform"
                                 href="./index.html">Студия</a>
                         </li>
                         <li class="mobile-menu__item">
-                            <a class="mobile-menu__link link"
+                            <a class="mobile-menu__link link touch-transform"
                                 href="./portfolio.html">Портфолио</a>
                         </li>
                         <li class="mobile-menu__item">
-                            <a class="mobile-menu__link link"
+                            <a class="mobile-menu__link link touch-transform"
                                 href="./index.html">Контакты</a>
                         </li>
                     </ul>
@@ -93,12 +93,12 @@
                 <div class="mobile-nav__bottom">
                     <ul class="mobile-contacts list">
                         <li class="mobile-contacts__item">
-                            <a class="mobile-contacts__link link mobile-contacts__link---telephone "
+                            <a class="mobile-contacts__link link mobile-contacts__link---telephone touch-transform"
                                 href="./index.html">+38 096 111
                                 11 11</a>
                         </li>
                         <li class="mobile-contacts__item">
-                            <a class="mobile-contacts__link link"
+                            <a class="mobile-contacts__link link touch-transform"
                                 href="./portfolio.html">info@devstudio.com</a>
                         </li>
 
@@ -311,12 +311,27 @@
                 <h2 class="title">Наша команда</h2>
                 <ul class="our-team__list list">
                     <li class="our-team__item">
+
                         <picture>
+                            <source
+                                srcset="./images/index/team/teamcard1-desktop.jpg 1x, ./images/index/team/teamcard1-desktop2-min.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/index/team/teamcard1-tablet-min.jpg 1x, ./images/index/team/teamcard1-tablet2-min.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source
+                                srcset="./images/index/team/teamcard1-mobil-min.jpg 1x, ./images/index/team/teamcard1-mobil-2x-min.jpg 2x"
+                                media="(min-width: 480px)">
+                            <img src="./images/index/team/teamcard1-mobil-min.jpg"
+                                alt="фотография мужчины" width="450">
+                        </picture>
+
+                        <!-- <picture>
                             <source
                                 srcset="./images/index/team/team-img1-desktop.jpg 1x, ./images/index/team/team-img1-desktop2-min.jpg 2x"
                                 media="(min-width: 1200px)">
                             <source
-                                srcset="./images/index/team/team-img1-tablet-min.jpg 1x, ./images/index/team/team-img1-tablet2-min.jpg 2x"
+                                srcset="./images/index/team/team-img1-tablet.jpg 1x ./images/indx/team/team-.jpg 2x"
                                 media="(min-width: 768px)">
                             <source
                                 srcset="./images/index/team/team-img1-mobil-min.jpg 1x, ./images/index/team/team-img1-mobil-2x-min.jpg 2x"
@@ -324,7 +339,7 @@
                             <img width="450"
                                 src="./images/index/team/team-img1-mobil-min.jpg"
                                 alt="фотография мужчины">
-                        </picture>
+                        </picture> -->
 
                         <div class="our-team__card">
                             <h3 class="our-team__title">Игорь Демьяненко</h3>
